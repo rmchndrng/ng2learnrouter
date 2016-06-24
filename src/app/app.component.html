@@ -2,4 +2,20 @@
 <nav>
   <!--<a [routerLink]="['/route1']">Crisis Center</a>  -->
 </nav>
-<router-outlet></router-outlet>
+<div>
+  <h2>Main router outlet - BEGIN</h2>
+  <router-outlet></router-outlet>
+  <h2>Main router outlet - END</h2>
+</div>
+<section class="container">
+  <div class="left-half">
+    <h2>Left router outlet - BEGIN</h2>
+    <router-outlet name="left"></router-outlet>
+    <h2>Left router outlet - END</h2>
+  </div>
+  <div class="right-half">
+    <h2>Right router outlet - BEGIN</h2>
+  <router-outlet name="right"></router-outlet>
+  <h2>Right router outlet - END</h2>
+  </div>
+</section>

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ROUTER_DIRECTIVES } from '@angular/router';
+import { ROUTER_DIRECTIVES,Router,UrlTree } from '@angular/router';
 
 @Component({
   moduleId: module.id,
@@ -10,4 +10,11 @@ import { ROUTER_DIRECTIVES } from '@angular/router';
 })
 export class AppComponent {
   title = 'app works!';
+  constructor(router:Router){
+    const url: string = router.url;
+    console.log(url);
+    // we can parse it into UrlTree
+    const tree: UrlTree = router.parseUrl(url);
+    console.log(tree);
+  }
 }

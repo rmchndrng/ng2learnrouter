@@ -1,0 +1,5 @@
+<h1>Villains List</h1>
+<li *ngFor="let villain of villains">
+  <span class="badge">{{villain.id}}</span>  
+  <a href="#" [routerLink]="['../','view',villain.id]"> {{villain.name}}</a>
+</li>
