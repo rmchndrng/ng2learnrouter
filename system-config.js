@@ -26,8 +26,8 @@ var barrels = [
     // App specific barrels.
     'app',
     'app/shared',
-    'app/route1',
-    'app/route2'
+    'app/heroes',
+    'app/villains'
 ];
 var cliSystemConfigPackages = {};
 barrels.forEach(function (barrelName) {
